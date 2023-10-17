@@ -130,4 +130,14 @@ print(response)
 
 #-----------------------------------------------------------------------------------------
 
+print("--------Recursive Program to know array is sorted or not---------------")
+def isArrayInSortedOrder(A):
+    if len(A) == 1:
+        return True
+    return A[0] <= A[1] and isArrayInSortedOrder(A[1:])
 
+A=[2,5,18,11,45,78]
+print("Is array 'A' sorted: ",isArrayInSortedOrder(A))
+
+
+#-----------------------------------------------------------------------------------------
